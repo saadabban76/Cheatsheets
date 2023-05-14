@@ -1,4 +1,3 @@
-  
 1. Code Snippet to disable the disable the select blue highlight of text
 	-webkit-user-select: none; /* Safari */
   	-ms-user-select: none; /* IE 10 and IE 11 */

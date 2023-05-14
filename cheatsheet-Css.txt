@@ -1,9 +1,10 @@
   
----------Code Snippet to disable the disable the select blue highlight of text------- 
+1. Code Snippet to disable the disable the select blue highlight of text
 	-webkit-user-select: none; /* Safari */
   	-ms-user-select: none; /* IE 10 and IE 11 */
   	user-select: none; /* Standard syntax */
-----------Code Snippet to remove the blue highlight on click of the button-----------
+
+2. Code Snippet to remove the blue highlight on click of the button
   	-webkit-touch-callout: none;
   	-webkit-user-select: none;
   	-khtml-user-select: none;
@@ -11,3 +12,35 @@
   	-ms-user-select: none;
   	user-select: none;
   	-webkit-tap-highlight-color: transparent;
+
+3. Using the "clamp" function for responsive text:
+
+	p {
+  	  font-size: clamp(16px, 4vw, 24px);
+	}
+In this example, the font size of the paragraph will be set to 16px on small screens, scale proportionally to 4% of the viewport width on medium screens, and capped at 24px on large screens.
+
+4. Creating custom checkboxes and radio buttons:
+	input[type="checkbox"], input[type="radio"] {
+  	appearance: none;
+ 	-webkit-appearance: none;
+  	background-color: white;
+  	border: 1px solid black;
+  	width: 16px;
+  	height: 16px;
+	}
+
+	input[type="checkbox"]:checked::before, input[type="radio"]:checked::before {
+  	content: '\2713';
+  	color: black;
+  	font-weight: bold;
+  	font-size: 16px;
+  	line-height: 1;
+  	text-align: center;
+  	vertical-align: middle;
+	}
+
+5. Creating smooth scrolling:
+	html {
+  	scroll-behavior: smooth;
+	}
